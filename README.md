@@ -10,11 +10,11 @@
     
 ### Configuration .env
 
-    $ PORT= 3002
-    $ HOST = localhot
-    $ USER = root
+    $ PORT= 
+    $ HOST =
+    $ USER = 
     $ PASS =
-    $ DB = api
+    $ DB = 
     $ MONGODB_URL=
 
 ### Start app using Nodemon
