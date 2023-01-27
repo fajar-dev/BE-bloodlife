@@ -16,9 +16,9 @@ const router = express.Router();
 
 
 const {
-  readUser,
-} = require("../controllers/mu");
+  getBerita,
+} = require("../controllers/berita");
 
-router.get("/mu", readUser)
+router.get("/berita", getBerita)
 
 module.exports = router;

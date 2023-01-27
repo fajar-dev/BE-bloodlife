@@ -5,13 +5,13 @@ const cors = require("cors");
 
 require("dotenv").config();
 
-const connection = require("./database/mysqlDB");
+const connection_master = require("./database/mysqlDB");
 
 const app = express();
 
 // database init
 function mysqlConnect() {
-  global.connection = mysql.createConnection(connection);
+  global.connection = mysql.createConnection(connection_master);
 
   global.connection.connect(function (err) {
     if (err) {

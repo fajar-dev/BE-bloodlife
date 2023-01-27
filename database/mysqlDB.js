@@ -5,7 +5,7 @@ const connection = {
   host: process.env.HOST,
   user: process.env.USER,
   password: process.env.PASS,
-  database: process.env.DB,
+  database: process.env.DB_master,
 };
 
 module.exports = connection;

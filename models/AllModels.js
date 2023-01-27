@@ -54,4 +54,4 @@ User.delete = function (id, result) {
   });
 };
 
-module.exports = User;
+module.exports = Models;
