@@ -17,8 +17,10 @@ const router = express.Router();
 
 const {
   getBerita,
+  getBeritaByid,
 } = require("../controllers/berita");
 
+router.get("/berita/:any", getBeritaByid)
 router.get("/berita", getBerita)
 
 module.exports = router;
