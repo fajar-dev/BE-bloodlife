@@ -1,5 +1,4 @@
 
-
 // exports.createUser = async (req, res) => {
 //   if (!req.body.firstName || !req.body.lastName || !req.body.email) {
 //     return res.status(422).json({
@@ -31,16 +30,16 @@ exports.readUser = async (req, res) => {
   });
 };
 
-User.create = async (req, res) => {
-  connection.query("INSERT INTO users  ?", (err, result) => {
-    if (err) {
-      res.json({
-        err,
-      });
-    } else {
-      res.json({
-        result,
-      });
-    }
-  });
-};
+// User.create = async (req, res) => {
+//   connection.query("INSERT INTO users set ?", (err, result) => {
+//     if (err) {
+//       res.json({
+//         err,
+//       });
+//     } else {
+//       res.json({
+//         result,
+//       });
+//     }
+//   });
+// };

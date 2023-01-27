@@ -1,10 +1,11 @@
 "user strict";
 
+require("dotenv").config();
 const connection = {
-  host: "127.0.0.1",
-  user: "root",
-  password: "",
-  database: "api",
+  host: process.env.HOST,
+  user: process.env.USER,
+  password: process.env.PASS,
+  database: process.env.DB,
 };
 
 module.exports = connection;
